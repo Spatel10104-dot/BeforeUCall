@@ -7,12 +7,12 @@
   "theme_color": "#f2f2f7",
   "icons": [
     {
-      "src": "images/saahil.png",
+      "src": "familycover.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "images/saahil.png",
+      "src": "familycover.png",
       "sizes": "512x512",
       "type": "image/png"
     }
