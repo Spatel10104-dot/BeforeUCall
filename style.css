@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    system-ui, sans-serif;
+  background: #f2f2f7;
+  color: #111827;
+}
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 16px 32px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Apple-style card */
+.kid-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Avatar on the LEFT (Apple style) */
+.kid-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.kid-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.kid-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.kid-time {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.kid-location {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.app-footer {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* Slightly tighter layout on small screens */
+@media (max-width: 360px) {
+  .kid-card {
+    padding: 12px 12px;
+  }
+
+  .kid-avatar {
+    width: 56px;
+    height: 56px;
+  }
+
+  .kid-name {
+    font-size: 17px;
+  }
+
+  .kid-time {
+    font-size: 18px;
+  }
+}
