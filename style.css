@@ -13,99 +13,105 @@ body {
   color: #111827;
 }
 
+/* App container – wider + taller feel */
 .app {
-  max-width: 480px;
+  width: 100%;
+  max-width: 560px;   /* wider than before */
   margin: 0 auto;
-  padding: 24px 16px 32px;
+  padding: 32px 16px 48px;
 }
 
+/* Header */
 .app-header {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .app-header h1 {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
 
 .subtitle {
-  margin-top: 4px;
-  font-size: 14px;
+  margin-top: 6px;
+  font-size: 15px;
   color: #6b7280;
 }
 
+/* Cards layout */
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 22px; /* more vertical spacing */
 }
 
-/* Apple-style card */
+/* Card */
 .kid-card {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 14px 16px;
+  gap: 20px;
+  padding: 22px 22px; /* MUCH taller cards */
   background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 24px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
 }
 
-/* Avatar on the LEFT (Apple style) */
+/* Avatar */
 .kid-avatar {
-  width: 64px;
-  height: 64px;
+  width: 76px;
+  height: 76px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
 }
 
+/* Text block */
 .kid-info {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
 
 .kid-name {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
 }
 
 .kid-time {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
 }
 
 .kid-location {
-  font-size: 13px;
+  font-size: 14px;
   color: #6b7280;
 }
 
+/* Footer */
 .app-footer {
-  margin-top: 24px;
+  margin-top: 32px;
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
   color: #9ca3af;
 }
 
-/* Slightly tighter layout on small screens */
+/* Small phones */
 @media (max-width: 360px) {
   .kid-card {
-    padding: 12px 12px;
+    padding: 18px 18px;
   }
 
   .kid-avatar {
-    width: 56px;
-    height: 56px;
+    width: 68px;
+    height: 68px;
   }
 
   .kid-name {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .kid-time {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
