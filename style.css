@@ -16,7 +16,7 @@ body {
 /* App container – wider + taller feel */
 .app {
   width: 100%;
-  max-width: 560px;   /* wider than before */
+  max-width: 600px;   /* wider than before */
   margin: 0 auto;
   padding: 32px 16px 48px;
 }
@@ -51,7 +51,7 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 22px 22px; /* MUCH taller cards */
+  padding: 26px 24px; /* MUCH taller cards */
   background: #ffffff;
   border-radius: 24px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
@@ -59,8 +59,8 @@ body {
 
 /* Avatar */
 .kid-avatar {
-  width: 76px;
-  height: 76px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -79,7 +79,7 @@ body {
 }
 
 .kid-time {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 500;
 }
 
@@ -115,3 +115,4 @@ body {
     font-size: 22px;
   }
 }
+
